@@ -17,12 +17,12 @@ class House:
 
 NumberOfHouse = []
 
-a = House("강남", "아파트", "매매", "10억", "2010년")
-b = House("마포", "오피스텔", "전세", "5억", "2007년")
-c = House("송파", "전세", "월세", "500/50", "2000년")
-NumberOfHouse.append(a)
-NumberOfHouse.append(b)
-NumberOfHouse.append(c)
+house1 = House("강남", "아파트", "매매", "10억", "2010년")
+house2 = House("마포", "오피스텔", "전세", "5억", "2007년")
+house3 = House("송파", "전세", "월세", "500/50", "2000년")
+NumberOfHouse.append(house1)
+NumberOfHouse.append(house2)
+NumberOfHouse.append(house3)
 
 print("총 {}대의 매물이 있습니다.".format(len(NumberOfHouse)))
 for house in NumberOfHouse:
