@@ -20,6 +20,8 @@
 # finally:
 #     print("계산기를 이용해 주셔서 감사합니다.")
 
+# [퀴즈9]
+
 # [코드]
 
 class SoldOutError(Exception):
@@ -33,7 +35,7 @@ while(True):
         order = int(input("치킨 몇 마리 주문하시겠습니까?"))
         if order > chicken :
             print("재료가 부족합니다.")
-        elif order <= 0:
+        elif order < 1:
             raise ValueError
         else:
             print("[대기번호 {0}] {1} 마리 주문이 완료되었습니다."\
